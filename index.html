@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <title>Oblig 1 | Web components | IDG2100</title>
+    <link rel="stylesheet" href="assets/core.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="module" src="components/countdown-timer.js"></script>
+    <script type="module" src="components/race-track.js"></script>
+    <script type="module" src="components/race-horse.js"></script>
+</head>
+
+<body>
+    <!-- THIS IS ONLY A TEMPLATE. IF YOU FEEL YOU NEED TO MODIFY THE LAYOUT, 
+         MAKE SURE YOU EXPLAIN AND DOCUMENT WHY YOU REIMPLEMENTED THE USER INTERFACE -->
+    <header>
+        <h1>Fast Horse Race 🏇💨</h1>
+        <p>
+            The race is about to start! Each player controls a horse and has a key assigned. 
+            Press your key as fast as you can to make your horse run. 
+            The first horse to reach the finish line wins! 
+            Are you ready? Get set… GO!
+        </p>
+        <!-- <p>Your timer could go here...</p> -->
+        <countdown-timer id="timer" seconds="3"></countdown-timer>
+    </header>
+    <main>
+        <h2>Race track</h2>
+        <!-- Replace based on your project -->
+        <race-track class="race-track" id="race-track">
+            <race-horse class="race-horse"
+                horsename="Thousand Acre Horse" key="a" lane="1"></race-horse>
+            <race-horse class="race-horse"
+                horsename="Horsetensia" key="l" lane="2"></race-horse>
+            <race-horse class="race-horse"
+                horsename="The Great Gallopsby" key="+" lane="3"></race-horse>
+            <race-horse class="race-horse"
+                horsename="The Wild One" emoji="🐎" key="-" lane="4"></race-horse>
+        </race-track>
+    </main>
+
+    <aside>
+        <!-- Replace based on your project -->
+        <h2>Race History</h2>
+        <ul id="history-container">
+            <!-- Delete the li elements. This will be generated automatically. -->
+            <li>(01/02/2025 20:00h) Flash won the race in 3 seconds</li>
+            <!-- end delete -->
+        </ul>
+    </aside>
+    
+    <footer>
+        <!-- Replace based on your project -->
+        <h2>Information section</h2>
+        <p>Institution: <em>NTNU in Gjøvik</em></p>
+        <p>Class: <em>IDG2100</em></p>
+        <p>Developed: <em>February 2025</em></p>
+        <p>Developer: <em>Jon P. E. (developed with the help of ChatGPT-4o prompts).</em></p>
+    </footer>
+</body>
+
+</html>

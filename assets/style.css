@@ -1,0 +1,33 @@
+/* Your styles go here */
+body {
+    background-color: whitesmoke;
+}
+
+.race-track {
+    background-color: salmon;
+    border: 2px solid black; 
+    max-width: 1200px;
+    width: 80%;
+}
+
+/* Undoing default line-height from "core.css" here
+   so the horse-name sticks close to the horse. */
+.race-horse {
+    line-height: 1em;
+    max-width: 240px;
+    width: 16%;
+}
+
+/* Moved the following inside the JavaScript to work for live rendering.
+   - Jon */
+/* Background color to ensure the name-text can be read
+   both on and off the track. */
+/* .racer-name {
+    background-color: antiquewhite;
+} */
+
+/* Flips the horses so they're facing the correct direction for the race.
+   - Jon */
+/* .racer-graphic {
+    transform: scale(-1, 1);
+} */

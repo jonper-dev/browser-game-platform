@@ -1,0 +1,87 @@
+/* Starter layout by Geoff Graham
+https://codepen.io/geoffgraham/pen/jaqWMJ
+with several modifications*/
+
+/* ++++++ IMPORTANT ++++++ */
+/* This is only a starter code for the main layout. 
+You can modify the layout to create your own theme.
+Make sure the new layout is responsive.
+Use this file to create only the main layout and modify the fonts, headings and sizes.
+*/
+/* end IMPORTANT +++++++++ */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(5vw, max-content) minmax(30vw, max-content) minmax(5vw, max-content);
+    grid-gap: 1em;
+    margin: auto;
+    max-width: 1680px;
+    padding: 1em 0;
+    font-family: "Montserrat", "open sans", sans-serif;
+    line-height: 1.7;
+}
+
+body>* {
+    padding: 1rem;
+}
+
+header,
+main,
+aside,
+footer {
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+header>* {
+    max-width: 72ch;
+}
+
+main {
+    flex-direction: column;
+}
+
+header,
+footer {
+    grid-column: 1 / span 6;
+}
+
+main {
+    grid-column: 1 / span 4;
+    background: lightsteelblue;
+}
+
+.card-container {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    justify-content: center;
+}
+
+aside {
+    grid-column: span 2;
+    background: lightgreen;
+}
+
+header,
+footer {
+    min-height: 10vw;
+}
+
+@media (max-width: 1200px) {
+
+    body {
+        max-width: 95vw;
+    }
+
+    main,
+    aside {
+        grid-column: 1 / span 6;
+    }
+}
